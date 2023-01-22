@@ -3,7 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /*background-image: linear-gradient(to bottom, #485563, #29323c);*/
+    background-attachment: fixed;
+    background-color: white;
 }
+
+
+
 
 .container {
     width: 80%;
@@ -15,7 +21,13 @@ header {
     color: #fff;
     padding: 10px;
     display: flex;
+    flex-direction: column;
+}
+
+.nav-bar{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header form {
@@ -75,19 +87,33 @@ main {
     margin: 20px 0;
 }
 
-section {
-    width: 30%;
+#featured-guitars {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-header{
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .guitar-item {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    padding: 10px;
-    position: relative;
+    flex: 1 0 30%;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
+
 .guitar-item img {
-    width: 100%;
+    width: 200px;
+    height: 500px;
 }
 
 .guitar-item h3 {
@@ -109,23 +135,39 @@ section {
 
 .guitar-item a:hover {
     background-color: #555;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.guitar-item .add-to-cart {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
+.guitar-item .add-to-cart:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease-in-out;
 }
+
+
+
 
 footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+img {
+    transition: transform .3s;
+}
+img:hover {
+    transform: scale(1.2);
 }
