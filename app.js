@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.render('site');
 })
 
+app.get('/about_us', (req, res) => {
+    res.render('about_us.ejs');
+})
+
 app.all('*', (req, res) => {
     res.status(404).send('<h1>resource not found</h1>');
 })
