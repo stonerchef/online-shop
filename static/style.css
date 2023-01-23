@@ -8,9 +8,6 @@ body {
     background-color: white;
 }
 
-
-
-
 .container {
     width: 80%;
     margin: 0 auto;
@@ -142,9 +139,6 @@ main {
     background-color: #555;
     transition: background-color 0.3s ease-in-out;
 }
-
-
-
 
 footer {
     background-color: #333;

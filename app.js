@@ -1,13 +1,17 @@
-var express = require('express');
+const express = require('express');
+const path = require('path');
 var app = express();
 
 const PORT = 3000;
 
 app.set('view engine', 'ejs');
-//app.set('views', '/views'); jakaś literówka tu jest pewnie w ścieżce
+app.set('views', './views');
+
+app.use( express.static( "./static" ) );
+app.use( express.static( "./images" ) );
 
 app.get('/', (req, res) => {
-    res.render('test');
+    res.render('site');
 })
 
 app.all('*', (req, res) => {
@@ -15,5 +19,5 @@ app.all('*', (req, res) => {
 })
   
 app.listen(PORT, () => {
-    console.log(`server started at adress localhos:${PORT}...`);
+    console.log(`server started at adress localhost:${PORT}...`);
 });
