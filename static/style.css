@@ -21,6 +21,7 @@ header {
     flex-direction: column;
 }
 
+
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -105,16 +106,17 @@ main {
     flex: 1 0 30%;
     margin-right: 10px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 
 .guitar-item img {
-    width: 200px;
-    height: 500px;
+    width: 100%;
 }
-
 .guitar-item h3 {
-    margin-top: 0;
+    margin-top: 30px;
+    text-align: center;
+    height: 40px;
 }
 
 .guitar-item p {
@@ -125,9 +127,9 @@ main {
     background-color: #333;
     color: #fff;
     display: block;
-    padding: 10px;
+    padding: 30px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: aqua;
 }
 
 .guitar-item a:hover {
@@ -163,5 +165,5 @@ img {
     transition: transform .3s;
 }
 img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
