@@ -27,6 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 header form {
@@ -114,9 +115,10 @@ main {
 
 .guitar-item img {
     width: 100%;
+    margin-top: 5px;
 }
 .guitar-item h3 {
-    margin-top: 30px;
+    margin-top: 35px;
     text-align: center;
     height: 40px;
 }
