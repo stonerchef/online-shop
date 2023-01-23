@@ -16,5 +16,5 @@ app.all('*', (req, res) => {
 })
   
 app.listen(PORT, () => {
-    console.log(`server started at adress localhost/${PORT}...`)
+    console.log(`server started at adress localhos:${PORT}...`)
 });
