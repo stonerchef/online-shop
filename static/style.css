@@ -6,6 +6,7 @@ body {
     /*background-image: linear-gradient(to bottom, #485563, #29323c);*/
     background-attachment: fixed;
     background-color: white;
+    overflow-x: hidden;
 }
 
 .container {
@@ -107,6 +108,7 @@ main {
     margin-right: 10px;
     margin-bottom: 20px;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 
@@ -120,7 +122,11 @@ main {
 }
 
 .guitar-item p {
-    color: #999;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    /*margin-left: 20px;*/
 }
 
 .guitar-item a {
@@ -135,6 +141,7 @@ main {
 .guitar-item a:hover {
     background-color: #555;
     transition: background-color 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .guitar-item .add-to-cart:hover {
@@ -142,10 +149,38 @@ main {
     transition: background-color 0.3s ease-in-out;
 }
 
-footer {
+#contact-info {
     background-color: #333;
     color: #fff;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+.contact p{
+    text-align: center;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.copyr {
+    margin-top: 20px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -167,3 +202,4 @@ img {
 img:hover {
     transform: scale(1.1);
 }
+
