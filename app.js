@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 var app = express();
 
 const PORT = 3000;
@@ -12,6 +11,10 @@ app.use( express.static( "./images" ) );
 
 app.get('/', (req, res) => {
     res.render('site');
+})
+
+app.get('/about_us', (req, res) => {
+    res.render('about_us.ejs');
 })
 
 app.all('*', (req, res) => {
