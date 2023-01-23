@@ -4,7 +4,7 @@ var app = express();
 const PORT = 3000;
 
 app.set('view engine', 'ejs');
-app.set('views', '/views');
+//app.set('views', '/views'); jakaś literówka tu jest pewnie w ścieżce
 
 app.get('/', (req, res) => {
     res.render('test');
