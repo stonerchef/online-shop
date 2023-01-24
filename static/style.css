@@ -220,3 +220,41 @@ img:hover {
 .phone {
     text-align: center;
 }
+
+.team h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.team-member{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.team-member-image img{
+    width: 43%;
+    margin-top: 5px;
+
+}
+
+.team-member-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+}
+
+
+.team-member-info h3, h4{
+    margin: 3px;
+}
+
+
+
+
+
+
