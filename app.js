@@ -17,6 +17,10 @@ app.get('/about_us', (req, res) => {
     res.render('about_us.ejs');
 })
 
+app.get('/cart', (req, res) => {
+    res.render('cart.ejs');
+})
+
 app.all('*', (req, res) => {
     res.status(404).send('<h1>resource not found</h1>');
 })

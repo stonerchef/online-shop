@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Guitar Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+<body>
+<header>
+    <nav class="nav-bar">
+        <div class="nav-item">
+            <input type="text" placeholder="Search for guitars">
+            <a href="#">Search</a>
+        </div>
+        <div class="nav-item">
+            <a href="/">Guitars</a>
+        </div>
+        <div class="nav-item">
+            <a href="./about_us">About Us</a>
+        </div>
+        <div class="nav-item">
+            <a href="#contact_info">Contact Us</a>
+        </div>
+        <div class="cart-icon">
+            <a href="./cart">
+                <img src="cart.png" alt="Shopping Cart">
+            </a>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="guitar1.jpg">
+                        <div>
+                            <p>Black Guitar</p>
+                            <small>Price: $100</small>
+                            <br>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                <td><input type="number" value="1"> </td>
+                <td>$23550.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$23550.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$24550.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</main>
+
+<footer id="contact_info">
+    <h3>Contact</h3>
+    <div class="email">
+        <a href="mailto:guitarstore123@gmail.com"> guitarstore123@gmail.com </a>
+    </div>
+    <div class="phone">
+        <a href="tel:+48 123 456 789">+48 123 456 789</a>
+    </div>
+    <div class="address">
+        <p>1234 Guitar Street, Guitar City, Guitar State, 12345</p>
+    </div>
+    <div class="copyr">
+        <p>Copyright © 2023 Guitar Shop</p>
+    </div>
+</footer>
+</body>
+</html>
