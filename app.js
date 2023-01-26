@@ -1,10 +1,11 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 
 var app = express();
-mongoose.connect('mongodb://localhost/users');
 
-const PORT = 3000;
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -29,5 +30,5 @@ app.all('*', (req, res) => {
 })
   
 app.listen(PORT, () => {
-    console.log('http://localhost:' + PORT);
+    console.log('http://localhost:' + process.env.PORT);
 });
