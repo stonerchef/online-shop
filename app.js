@@ -1,5 +1,8 @@
 const express = require('express');
+const mongoose = require('mongoose');
+
 var app = express();
+mongoose.connect('mongodb://localhost/users');
 
 const PORT = 3000;
 
