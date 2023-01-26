@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>log in</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+
+<body>
+    <form method="POST">
+        <div id='login'>
+            <div>
+                Logowanie
+            </div>
+            <div>
+                <label>Nazwa użytkownika:</label>
+                <input type='text' name='txtUser' />
+            </div>
+            <div>
+                <label>Hasło:</label>
+                <input type='password' name='txtPwd' />
+            </div>
+            <div>
+                <button>Zaloguj</button>
+            </div>
+            <% if ( locals.message ) { %>
+                <div class='message'>
+                    <%= locals.message %>
+                </div>
+                <% } %>
+        </div>
+    </form>
+</body>
+
+</html>

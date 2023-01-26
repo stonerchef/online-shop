@@ -1,11 +1,8 @@
-require('dotenv').config();
-
 const express = require('express');
-const mongoose = require('mongoose');
+
+const PORT = 3000; 
 
 var app = express();
-
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -21,6 +18,10 @@ app.get('/about_us', (req, res) => {
     res.render('about_us.ejs');
 })
 
+app.get('/login', (req, res) => {
+    res.render('login.ejs');
+})
+
 app.get('/cart', (req, res) => {
     res.render('cart.ejs');
 })
@@ -30,5 +31,5 @@ app.all('*', (req, res) => {
 })
   
 app.listen(PORT, () => {
-    console.log('http://localhost:' + process.env.PORT);
+    console.log('http://localhost:' + PORT);
 });
